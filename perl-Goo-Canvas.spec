@@ -8,7 +8,7 @@
 Summary:	Goo::Canvas - Perl interface to the GooCanvas
 Name:		perl-Goo-Canvas
 Version:	0.06
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -58,7 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorarch}/Goo
 %{perl_vendorarch}/Goo/*.pm
+%dir %{perl_vendorarch}/auto/Goo
 %dir %{perl_vendorarch}/auto/Goo/Canvas
 %{perl_vendorarch}/auto/Goo/Canvas/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Goo/Canvas/*.so
