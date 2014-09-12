@@ -62,6 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Goo/*.pm
 %dir %{perl_vendorarch}/auto/Goo
 %dir %{perl_vendorarch}/auto/Goo/Canvas
-%{perl_vendorarch}/auto/Goo/Canvas/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Goo/Canvas/*.so
 %{_mandir}/man3/*
