@@ -4,7 +4,6 @@
 
 %define		pdir	Goo
 %define		pnam	Canvas
-%include	/usr/lib/rpm/macros.perl
 Summary:	Goo::Canvas - Perl interface to the GooCanvas
 Name:		perl-Goo-Canvas
 Version:	0.06
