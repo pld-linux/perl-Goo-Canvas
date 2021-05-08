@@ -7,7 +7,7 @@
 Summary:	Goo::Canvas - Perl interface to the GooCanvas
 Name:		perl-Goo-Canvas
 Version:	0.06
-Release:	15
+Release:	16
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
