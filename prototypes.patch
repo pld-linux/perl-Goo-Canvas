@@ -1,0 +1,12 @@
+--- Goo-Canvas-0.06/xs/goocanvas.xs.orig	2025-07-27 13:41:44.946252284 +0200
++++ Goo-Canvas-0.06/xs/goocanvas.xs	2025-07-27 15:02:53.198799449 +0200
+@@ -1,5 +1,9 @@
+ #include "goocanvas-perl.h"
+ 
++cairo_surface_t* goo_canvas_cairo_surface_from_pixbuf(GdkPixbuf* pixbuf);
++
++cairo_pattern_t* goo_canvas_cairo_pattern_from_pixbuf(GdkPixbuf* pixbuf);
++
+ MODULE = Goo::Canvas		PACKAGE = Goo::Canvas   PREFIX = goo_canvas_
+ =head1 SYNOPSIS
+ 

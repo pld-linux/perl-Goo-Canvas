@@ -13,6 +13,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/Y/YE/YEWENBIN/Goo-Canvas-%{version}.tar.gz
 # Source0-md5:	7dfe0be8c17bfd641d18384d4fd8fb23
+Patch0:		prototypes.patch
 URL:		http://search.cpan.org/dist/Goo-Canvas/
 BuildRequires:	goocanvas-devel >= 0.9
 BuildRequires:	perl(ExtUtils::Depends) >= 0.2
@@ -35,6 +36,7 @@ GooCanvas.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
